@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    min-height: 100vh;/*相对于浏览器的高度 */
+    background: #4c4c4c url('bizhi.jpg');/*如果图片没有加载出来就会优先显示颜色 */
+    background-size: cover;
+    display: flex;/*把父容器设置为弹性*/
+    justify-content: center;/*在X轴上居中*/
+    align-items: center;/*在Y轴上居中 */
+}
+
+#wrapper{
+    width: 870px;
+    display: flex;
+}
+
+.speed{
+    flex: 1;
+    background-color: white;
+    border-radius: 50px;
+    display: flex;
+    overflow: hidden;
+    align-items: flex-start;/*从弹性开始的地方去布局*/
+    flex-direction:column;
+}
+.speed-bar{
+    width: 100%;
+    height: 16.3%;
+    background: linear-gradient(-170deg,#2376ae 0%, #c16ecf 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    cursor: pointer;/*把鼠标变成手的样子*/
+    flex-direction:column;
+}
+.select{
+    /* width: 120px; */
+    flex: 1;
+    margin: 10px;
+    display: flex;
+    /* align-items: center; */
+    flex-direction:column;
+}
+.speed-button{
+    width: 45px;
+    height: 45px;
+    align-items: center;
+    justify-content: center;
+    /* flex: 1; */
+    font-family: fantasy;
+    border-radius: 16px;
+    background: linear-gradient(145deg, #f0f0f0, #cacaca);
+    box-shadow:  20px 20px 39px #bebebe,
+             -20px -20px 39px #ffffff;
+    display: flex;
+    flex-direction:column;
+}
